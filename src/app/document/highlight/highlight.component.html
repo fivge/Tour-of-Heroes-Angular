@@ -1,0 +1,17 @@
+<p>highlight works!</p>
+<p appHighlight>Highlight me!</p>
+<a appHighlight>Link me!</a>
+<p appHighlight="yellow">Highlighted in yellow</p>
+<p [appHighlight]="'orange'">Highlighted in orange</p>
+<p [appHighlight]="color">Highlighted with parent component's color</p>
+
+<h1>My First Attribute Directive</h1>
+
+<h4>Pick a highlight color</h4>
+<div>
+    <input type="radio" name="colors" (click)="color='lightgreen'">Green
+    <input type="radio" name="colors" (click)="color='yellow'">Yellow
+    <input type="radio" name="colors" (click)="color='cyan'">Cyan
+    <input type="radio" name="colors" (click)="color=null">Null
+</div>
+<p [appHighlight]="color" defaultColor="violet">Highlight me!</p>
