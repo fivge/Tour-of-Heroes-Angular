@@ -11,6 +11,11 @@ const routes: Routes = [
     path: "doc",
     loadChildren: () =>
       import("./document/document.module").then(mod => mod.DocumentModule)
+  },
+  {
+    path: "list",
+    loadChildren: () =>
+      import("./data-list/data-list.module").then(mod => mod.DataListModule)
   }
 ];
 
