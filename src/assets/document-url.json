@@ -1,0 +1,17 @@
+{
+  "模板市场": "/document/cks/3-operations-guide/3.7-template.html#模板市场",
+  "模板实例": "/document/cks/3-operations-guide/3.7-template.html#模板实例",
+  "模板开发指南": "/document/cks/3-operations-guide/3.7-template.html#模板开发指南",
+  "应用": "/document/cks/3-operations-guide/3.1-application.html#应用",
+  "应用实例": "/document/cks/3-operations-guide/3.1-application.html#应用实例",
+  "无状态负载": "/document/cks/3-operations-guide/3.4-load.html#无状态负载",
+  "有状态负载": "/document/cks/3-operations-guide/3.4-load.html#有状态负载",
+  "配置项": "/document/cks/3-operations-guide/3.5-configuration.html#config",
+  "密钥": "/document/cks/3-operations-guide/3.5-configuration.html#secret",
+  "容器组": "/document/cks/3-operations-guide/3.4-load.html#容器组",
+  "服务治理": "/document/cks/3-operations-guide/3.2-micro-service.html#服务治理",
+  "服务网关": "/document/cks/3-operations-guide/3.2-micro-service.html#服务网关",
+  "服务观测": "/document/cks/3-operations-guide/3.2-micro-service.html#服务观测",
+  "普通任务": "/document/cks/3-operations-guide/3.4-load.html#普通任务",
+  "服务域名": "/document/cks/3-operations-guide/3.3-resource.html#服务域名"
+}
