@@ -6,11 +6,15 @@ import { NziDocumentCenterDirective } from "./shared/document-center.directive";
 import { PipeService } from "./shared/pipe.servive";
 import { HighlightComponent } from "./highlight/highlight.component";
 import { HighlightDirective } from "./shared/highlight.directive";
+import { HeroListComponent } from "./hero-list/hero-list.component";
+import { UnlessDirective } from "./shared/unless.directive";
+import { AclAllowDirective } from "./shared/acl-allow.directive";
+import { UserListComponent } from "./user-list/user-list.component";
 
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "highlight",
+    redirectTo: "user",
     pathMatch: "full"
   },
   {
@@ -20,6 +24,14 @@ const routes: Routes = [
   {
     path: "highlight",
     component: HighlightComponent
+  },
+  {
+    path: "hero",
+    component: HeroListComponent
+  },
+  {
+    path: "user",
+    component: UserListComponent
   },
   {
     path: "**",
@@ -32,7 +44,11 @@ const routes: Routes = [
     NziDocumentCenterDirective,
     DockerComponent,
     HighlightComponent,
-    HighlightDirective
+    HighlightDirective,
+    HeroListComponent,
+    UnlessDirective,
+    AclAllowDirective,
+    UserListComponent
   ],
   providers: [PipeService],
   imports: [CommonModule, RouterModule.forChild(routes)]

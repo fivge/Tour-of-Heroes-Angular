@@ -1,0 +1,92 @@
+<!-- <p appAclAllow>logo</p> -->
+
+<!-- <button *appAclAllow="'123'">添加</button>
+<a *appAclAllow="'123'">添加</a>
+<a *appAclAllow="false">添加false</a>
+<a *appAclAllow="true">添加true</a>
+<a>添加null</a> -->
+
+<p *ngIf="1+1===2">if-if</p>
+
+<ng-container *ngIf="1+1===2; else elseTemplate">
+    ifElse-if
+</ng-container>
+<ng-template #elseTemplate>
+    ifElse-else
+</ng-template>
+
+<ng-container *ngIf="1+1===2; then thenTemplate; else elseTemplate2">
+    ifElseThen-if
+</ng-container>
+<ng-template #thenTemplate>
+    ifElseThen-then
+</ng-template>
+<ng-template #elseTemplate2>
+    ifElseThen-else
+</ng-template>
+
+<p>---------------------------------</p>
+
+<p *ngIf="1+1===3">if-if</p>
+
+<ng-container *ngIf="1+1===3; else elseTemplate3">
+    ifElse-if
+</ng-container>
+<ng-template #elseTemplate3>
+    ifElse-else
+</ng-template>
+
+<ng-container *ngIf="1+1===3; then thenTemplate4; else elseTemplate4">
+    ifElseThen-if
+</ng-container>
+<ng-template #thenTemplate4>
+    ifElseThen-then
+</ng-template>
+<ng-template #elseTemplate4>
+    ifElseThen-else
+</ng-template>
+
+<p>---------------------------------</p>
+
+<ng-container *appAclAllow="1+1===2">
+    1 ifElseThen-if
+</ng-container>
+<ng-template #thenTemplate5>
+    ifElseThen-then
+</ng-template>
+<ng-template #elseTemplate5>
+    ifElseThen-else
+</ng-template>
+<p>---------------------------------</p>
+
+<ng-container *appAclAllow="1+1===3">
+    2 ifElseThen-if
+</ng-container>
+<p>---------------------------------</p>
+<ng-container *appAclAllow>
+    3 ifElseThen-if
+</ng-container>
+<p>---------------------------------</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+    </tbody>
+</table>
