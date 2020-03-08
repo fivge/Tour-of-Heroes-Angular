@@ -1,0 +1,5 @@
+<p>hero-list works!</p>
+<p><input type="text" [(ngModel)]="id"></p>
+<p><a [routerLink]="['/hero/hero', id]">custom {{id}}</a></p>
+<a (click)="goDetail()">custom {{id}}</a>
+<p><a [routerLink]="['/hero/hero', id, 'superman']">custom {{ id }}/superman</a></p>
