@@ -25,6 +25,10 @@ const routes: Routes = [
     loadChildren: () => import('./protobuf-demo/protobuf-demo.module').then(mod => mod.ProtobufDemoModule)
   },
   {
+    path: 'webcomponents',
+    loadChildren: () => import('./web-component/web-component.module').then(mod => mod.WebComponentModule)
+  },
+  {
     path: '**',
     component: PageNotFoundComponent
   }
