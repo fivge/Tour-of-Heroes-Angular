@@ -4,7 +4,7 @@
   "tabWidth": 2,
   "useTabs": false,
   "semi": true,
-  "trailingCommas": "none",
+  "trailingComma": "none",
   "bracketSpacing": true,
   "arrowParens": "avoid"
 }

@@ -29,6 +29,10 @@ const routes: Routes = [
     loadChildren: () => import('./web-component/web-component.module').then(mod => mod.WebComponentModule)
   },
   {
+    path: 'security',
+    loadChildren: () => import('./security-trust/security-trust.module').then(mod => mod.SecurityTrustModule)
+  },
+  {
     path: '**',
     component: PageNotFoundComponent
   }
