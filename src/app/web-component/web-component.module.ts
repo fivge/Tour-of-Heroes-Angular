@@ -5,17 +5,26 @@ import { WithWebComponentComponent } from './with-web-component/with-web-compone
 
 import './shared/web-components/Tab';
 import './shared/web-components/Tabs';
+import { PopupComponent } from './popup/popup.component';
+import { ForWebComponentComponent } from './for-web-component/for-web-component.component';
+import { PopupService } from './shared/popup.service';
 
 const routes: Routes = [
   {
     path: '',
     component: WithWebComponentComponent
+  },
+  {
+    path: 'popup',
+    component: ForWebComponentComponent
   }
 ];
 
 @NgModule({
-  declarations: [WithWebComponentComponent],
+  declarations: [WithWebComponentComponent, PopupComponent, ForWebComponentComponent],
   imports: [CommonModule, RouterModule.forChild(routes)],
+  providers: [PopupService],
+  entryComponents: [PopupComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class WebComponentModule {}
