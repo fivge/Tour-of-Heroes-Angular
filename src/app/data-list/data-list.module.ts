@@ -1,23 +1,23 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { Routes, RouterModule } from "@angular/router";
-import { K8sComponent } from "./k8s/k8s.component";
-import { EcsComponent } from "./ecs/ecs.component";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+import { K8sComponent } from './k8s/k8s.component';
+import { EcsComponent } from './ecs/ecs.component';
 
-import { ACLDirective } from "@pkg/acl";
+// import { ACLDirective } from "@pkg/acl";
 
 const routes: Routes = [
   {
-    path: "",
-    redirectTo: "k8s",
-    pathMatch: "full"
+    path: '',
+    redirectTo: 'k8s',
+    pathMatch: 'full'
   },
   {
-    path: "k8s",
+    path: 'k8s',
     component: K8sComponent
   },
   {
-    path: "ecs",
+    path: 'ecs',
     component: EcsComponent
   }
 ];

@@ -33,6 +33,10 @@ const routes: Routes = [
     loadChildren: () => import('./security-trust/security-trust.module').then(mod => mod.SecurityTrustModule)
   },
   {
+    path: 'ad',
+    loadChildren: () => import('./ad/ad.module').then(mod => mod.AdModule)
+  },
+  {
     path: '**',
     component: PageNotFoundComponent
   }

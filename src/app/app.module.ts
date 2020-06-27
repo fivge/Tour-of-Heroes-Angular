@@ -6,14 +6,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { DelonACLModule } from '@pkg/acl';
+// import { DelonACLModule } from '@pkg/acl';
 
 import { Router } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, HttpClientModule, AppRoutingModule, DelonACLModule.forRoot()],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    AppRoutingModule
+    // , DelonACLModule.forRoot()
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
