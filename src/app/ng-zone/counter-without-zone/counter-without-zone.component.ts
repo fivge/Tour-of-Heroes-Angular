@@ -7,8 +7,9 @@ import { ChangeDetectionStrategy } from '@angular/compiler/src/compiler_facade_i
   styles: []
 })
 export class CounterWithoutZoneComponent {
-  constructor(private applicationRef: ApplicationRef) {}
+  constructor(private applicationRef: ApplicationRef, private cdr: ChangeDetectorRef) {}
   tick() {
-    this.applicationRef.tick();
+    // this.applicationRef.tick();
+    this.cdr.detectChanges();
   }
 }

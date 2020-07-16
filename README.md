@@ -96,4 +96,19 @@ this.cdr.detectChanges() 对组件树进行手动变更
 
 ##### c) this.cdr.detectChanges()
 
+- markForCheck()
+- detectChanges()
+- detach()
+
+- OnPush
+
+- reattach()
+- checkNoChanges()
+
+<https://danielwiehl.github.io/edu-angular-change-detection/>
+
+#### why
+
+ViewModule <=> View
+
 ### component | derective
