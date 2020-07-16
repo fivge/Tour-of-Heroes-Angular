@@ -1,31 +1,39 @@
-# TourOfHeroes
+## angular in depth
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
+### change detection
 
-## Development server
+#### how
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+old vs new
 
-## Code scaffolding
+#### when
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Brower Async API > zone.js
 
-## Build
+- Events 所有浏览器事件
+- Timers setTimeout setInterval
+- XHR Ajax
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+#### source code
 
-## Running unit tests
+ApplicationRef
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<https://github.com/angular/angular/blob/master/packages/core/src/application_ref.ts>
 
-## Running end-to-end tests
+<https://github.com/angular/angular/blob/5666d116336e3e0d5426c5d8f6a91c178d797523/packages/core/src/application_ref.ts>
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-```bash
-protoc-gen-ts  --plugin="protoc-gen-ts=./node_modules/.bin/protoc-gen-ts" --js_out="import_style=commonjs,binary:./generated"     --ts_out="./generated" src/app/shared/module.proto
 ```
+onMicrotaskEmpty
+
+_loadComponent
+```
+
+`_loadComponent()` 执行 tick()
+
+`onMicrotaskEmpty` 构造函数`contract()`中第一次加载时，执行变更检测
+
+this.applicationRef.tick()
+
+### component | derective
+
+###
